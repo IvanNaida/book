@@ -1,0 +1,9 @@
+.side_collection {
+    display: flex;
+    flex-direction: column;
+    .side {
+        width: 100%;
+        height: 150px;
+        border: 1px solid red;
+    }
+}

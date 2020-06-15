@@ -1,0 +1,14 @@
+<div class="color_controller_wrapper" (mouseover)="activateColorController()" (mouseleave)="deactivateColorController()">
+    <div>
+        <label for="volume">R</label>
+        <input type="range" id="red" name="volume" #red min="0" max="256" [(ngModel)]="redColor" (mousemove)="Color($event)">
+    </div>
+    <div>
+        <label for="volume">G</label>
+        <input type="range" id="green" name="volume" #green min="0" max="256" [(ngModel)]="greenColor" (mousemove)="Color($event)">
+    </div>
+    <div>
+        <label for="volume">B</label>
+        <input type="range" id="blue" name="volume" #blue min="0" max="256" [(ngModel)]="blueColor" (mousemove)="Color($event)">
+    </div>
+</div>

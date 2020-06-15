@@ -1,0 +1,17 @@
+<div class="size_controller">
+    <h3 class="size_controller_header">Size controller</h3>
+    <div class="size_controller_wrapper">
+        <div class="size_controller_container">
+            <label for="side_x">X :</label>
+            <input type="number" max="300" name="side_x" [(ngModel)]="sizeX" (input)="saveData()" class="side_controller_input side_x">
+        </div>
+        <div class="size_controller_container">
+            <label for="side_y">Y :</label>
+            <input type="number" max="300" name="side_y" [(ngModel)]="sizeY" (input)="saveData()" class="side_controller_input side_y">
+        </div>
+        <div class="size_controller_container">
+            <label for="side_z">Z :</label>
+            <input type="number" max="50" name="side_z" [(ngModel)]="sizeZ" (input)="saveData()" class="side_controller_input side_z">
+        </div>
+    </div>
+</div>
